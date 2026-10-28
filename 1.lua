@@ -5,7 +5,7 @@
 -- Title: New hud based smooth ESP by @UXOfficial
 -- BRPlayerCharacterBase NEW ESP made by @UXOfficial
 
-_G.g_UXOfficial = _G.g_UXOfficial or "@VIP FILE"
+_G.g_UXOfficial = _G.g_UXOfficial or "@UAE HXS"
 local g_UXOfficial_credit = _G.g_UXOfficial
 
 local g_UXOfficial_StartSettingsMaintenance
@@ -1523,7 +1523,7 @@ do
     Other[#Other+1]={Key="LunarMortarAim",UI=AliasMap.Switcher,Text="Mortar aim",
         GetFunc=function() return featureState().Settings.MortarEnabled end,
         SetFunc=function(c,v) featureState().SetMortar(value(c,v));return true end}
-    local page={Key="HackMenu",Text="✦ VIP GOLD ✦",UIKey="Setting_Page_Privacy",Category={
+    local page={Key="HackMenu",Text="✦ UAE HXS ✦",UIKey="Setting_Page_Privacy",Category={
         {Key="Lunar_ESP_V2",Text="✦ ESP V2 ✦",Stack=V2},
         {Key="Lunar_Other",Text="✦ GOLD FEATURES ✦",Stack=Other}
     }}
@@ -5718,12 +5718,12 @@ local function ShowExpiryPopup(expired)
         local function onClick() end
         if expired then
             local expiresAt = os.date("!%Y-%m-%d %H:%M:%S UTC", EXPIRY_TIMESTAMP)
-            Msg.Show(4, "MOD EXPIRED", "THIS MOD HAS EXPIRED.\n\nEXPIRED ON: " .. expiresAt .. "\n\nTEXT Me to buy @VIP FILE", onClick)
+            Msg.Show(4, "MOD EXPIRED", "THIS MOD HAS EXPIRED.\n\nEXPIRED ON: " .. expiresAt .. "\n\nTEXT Me to buy @UAE HXS", onClick)
         else
             local remaining = _G._MOD_REMAINING_SECONDS or (EXPIRY_TIMESTAMP - os.time())
             local formatted = FormatTimeRemaining(remaining)
             local expiresAt = os.date("!%Y-%m-%d %H:%M:%S UTC", EXPIRY_TIMESTAMP)
-            Msg.Show(4, "NOTIFICATION", "MOD VALIDITY: " .. formatted .. "\nEXPIRES AT: " .. expiresAt .. "\n\nFOR RENEWAL DM @VIP FILE", onClick)
+            Msg.Show(4, "NOTIFICATION", "MOD VALIDITY: " .. formatted .. "\nEXPIRES AT: " .. expiresAt .. "\n\nFOR RENEWAL DM @UAE HXS", onClick)
         end
     end)
 end
@@ -5749,10 +5749,10 @@ function ShowLexusVIPMenu()   -- keep same name as your MainLoop call
         if not Msg or not Msg.Show then return end
 
         local function Step_ScamAlert()
-            Msg.Show(1, "✦ VIP FILE | GOLD EDITION ✦", "DON'T PLAY LIKE A ANIMAL \nAVOID REPORTS PLAY SAFE!!\n\nNO FEEDBACK - NO MORE UPDATES", 
+            Msg.Show(1, "✦ UAE HXS | GOLD EDITION ✦", "DON'T PLAY LIKE A ANIMAL \nAVOID REPORTS PLAY SAFE!!\n\nNO FEEDBACK - NO MORE UPDATES", 
                 function() 
                     local Web = require("client.slua.logic.url.logic_webview_sdk")
-                    if Web and Web.OpenURL then Web:OpenURL("https://wa.me/923060004752") end
+                    if Web and Web.OpenURL then Web:OpenURL("https://wa.me/92") end
                 end, 
                 function() end, 
                 "JOIN", "CLOSE")
@@ -5761,10 +5761,10 @@ function ShowLexusVIPMenu()   -- keep same name as your MainLoop call
         end
 
         local function Step_Welcome()
-            Msg.Show(1, "✦ @VIP FILE | PREMIUM ✦", "ACTIVATION SUCCESSFUL!\n\nThis Is Paid Mode Leaked By VIP FILE  MODS DM THE OWNER TO GET YOUR FILE.\nAVOID THE SCAMMERS AND COPY PASTERS, THE REAL OWNER IS @VIP FILE ",
+            Msg.Show(1, "✦ @UAE HXS | PREMIUM ✦", "ACTIVATION SUCCESSFUL!\n\nThis Is Paid Mode Leaked By UAE HXS  MODS DM THE OWNER TO GET YOUR FILE.\nAVOID THE SCAMMERS AND COPY PASTERS, THE REAL OWNER IS @UAE HXS ",
                 function() 
                     _G.InitModMenuTab()
-                    Notify("VIP MOD MENU BY @VIP FILE  🔥to toggle features!")
+                    Notify("UAE HXS MOD MENU BY @UAE HXS  🔥to toggle features!")
                     Step_ScamAlert()
                 end, 
                 function() end, 
