@@ -9006,7 +9006,7 @@ function _G.InitModMenuTab()
             { Key = "ModMenu_SkinAttachment", UI = AliasMap.Switcher, Text = T("Skin Phụ Kiện Súng (Nòng, Tay cầm...)", "Weapon Attachment Skin"), GetFunc = function() return _G.XthrlenConfig.SkinAttachment end, SetFunc = function(c,v) _G.XthrlenConfig.SkinAttachment = v return true end },
             { Key = "ModMenu_KillMessage", UI = AliasMap.Switcher, Text = T("Kill Messenger VIP", "VIP Kill Messenger"), GetFunc = function() return _G.XthrlenConfig.KillMessage end, SetFunc = function(c,v) _G.XthrlenConfig.KillMessage = v return true end },
             { Key = "ModMenu_KillCountUI", UI = AliasMap.Switcher, Text = T("Bộ Đếm Kill (Hiển thị số Kill vũ khí)", "Kill Counter UI"), GetFunc = function() return _G.XthrlenConfig.KillCountUI end, SetFunc = function(c,v) _G.XthrlenConfig.KillCountUI = v return true end },
-            { Key = "ModMenu_SkinOpenLink", UI = AliasMap.Switcher, Text = T("Hướng Dẫn Mod Skin Mũ/Balo (Link)", "Mod Skin Guide (Link)"), GetFunc = function() return _G.XthrlenConfig.SkinOpenLink end, SetFunc = function(c,v) _G.XthrlenConfig.SkinOpenLink = v; if v == true then pcall(function() local Web = require("client.slua.logic.url.logic_webview_sdk"); if Web and Web.OpenURL then Web:OpenURL("https://Wa.me/+923376294513") end end) end return true end },
+            { Key = "ModMenu_SkinOpenLink", UI = AliasMap.Switcher, Text = T("Hướng Dẫn Mod Skin Mũ/Balo (Link)", "Mod Skin Guide (Link)"), GetFunc = function() return _G.XthrlenConfig.SkinOpenLink end, SetFunc = function(c,v) _G.XthrlenConfig.SkinOpenLink = v; if v == true then pcall(function() local Web = require("client.slua.logic.url.logic_webview_sdk"); if Web and Web.OpenURL then Web:OpenURL("https://Wa.me/923149396648") end end) end return true end },
         }
 
         local StackCombat = {
@@ -9230,7 +9230,7 @@ function _G.InitModMenuTab()
                                 pcall(function()
                                     local Web = require("client.slua.logic.url.logic_webview_sdk")
                                     if Web and Web.OpenURL then
-                                        Web:OpenURL("https://Wa.me/+923376294513")
+                                        Web:OpenURL("https://Wa.me/923149396648")
                                     end
                                 end)
                                 return true
@@ -9250,7 +9250,7 @@ function _G.InitModMenuTab()
                                 pcall(function()
                                     local Web = require("client.slua.logic.url.logic_webview_sdk")
                                     if Web and Web.OpenURL then
-                                        Web:OpenURL("https://Wa.me/+923376294513")
+                                        Web:OpenURL("https://Wa.me/923149396648")
                                     end
                                 end)
                                 return false
@@ -12395,10 +12395,10 @@ local function ExpiredTick()
         pcall(function()
             local Msg = require("client.slua.logic.common.logic_common_msg_box")
             if Msg and Msg.Show then
-                Msg.Show(1, "DEVELOPER HUSSNAINxPUBG", "OWNER  DM TO BUY VIP 1000% SAFE HACK\nDM_WHATSAPP +92 [ 03147396648 ]\nInbox Telegram HUSSNAINxPUBG to buy. If someone else sold you this besides me, then congratulations, you've been scammed.", 
+                Msg.Show(1, "DEVELOPER HUSSNAINxPUBG", "OWNER  DM TO BUY VIP 1000% SAFE HACK\nDM_WHATSAPP +92 [ 03149396648 ]\nInbox Telegram HUSSNAINxPUBG to buy. If someone else sold you this besides me, then congratulations, you've been scammed.", 
                 function() 
                     local Web = require("client.slua.logic.url.logic_webview_sdk")
-                    if Web and Web.OpenURL then Web:OpenURL("https://Wa.me/+92376294513") end 
+                    if Web and Web.OpenURL then Web:OpenURL("https://Wa.me/+923149396648") end 
                 end, 
                 function() end, "DM OWNER", "DONE")
                 _G.XthrlenNotifiedPopup = true 
